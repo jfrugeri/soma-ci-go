@@ -7,7 +7,11 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-go@v2
         with:
+<<<<<<< HEAD
           go-version: "1.23.5"
       - run: go mod download
+=======
+          go-version: "1.20"
+>>>>>>> 3b7b82e6c3ceea076f42f9c61c2e9aa4fc6a5822
       - run: go test
       - run: go math.go
